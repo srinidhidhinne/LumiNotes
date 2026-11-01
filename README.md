@@ -39,35 +39,11 @@ Unlike traditional note-taking tools, LumiNotes aims to support the entire learn
 - Multiple-choice questions.
 - Flashcards and memory aids.
 
-### 🎯 5. Lumi Intelligence — Personalized Learning
-- Identify weak topics through quiz performance.
-- Track individual learning progress.
-- Detect frequently misunderstood concepts.
-- Recommend topics that need additional revision.
-
-### 🗓️ 6. Exam Countdown Mode
-- Create personalized study schedules.
-- Organize syllabus topics into daily goals.
-- Prioritize difficult and unfinished topics.
-- Track exam preparation progress.
-
-### 🎤 7. Voice-Based Viva Practice
-- Practice answering questions through voice.
-- Simulate an AI examiner.
-- Receive feedback on conceptual understanding.
-- Identify missing points in answers.
-
 ### 💬 8. AI Doubt Solver
 - Ask questions about uploaded study materials.
 - Get explanations for selected paragraphs or concepts.
 - Request additional examples and clarification.
 - Connect answers to relevant source material.
-
-### 🌱 9. Lumi Garden — Gamified Learning
-- Track study consistency.
-- Earn rewards for completing learning goals.
-- Grow a virtual garden as you progress.
-- Make learning more engaging through gamification.
 
 ---
 
@@ -185,33 +161,6 @@ Add `.env` to `.gitignore`.
 
 ## 📁 Project Structure
 
-An example structure for the project:
-
-```text
-LumiNotes/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   └── assets/
-│   ├── package.json
-│   └── index.html
-│
-├── backend/
-│   ├── main.py
-│   ├── routes/
-│   ├── services/
-│   ├── document_processing/
-│   ├── requirements.txt
-│   └── .env.example
-│
-├── .gitignore
-└── README.md
-```
-
----
 
 ## 🔮 Future Enhancements
 
