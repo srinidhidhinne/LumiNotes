@@ -1,0 +1,11 @@
+[functions.generate-notes]
+verify_jwt = true
+
+[functions.generate-practice-test]
+verify_jwt = true
+
+[functions.generate-diagram]
+verify_jwt = true
+
+[functions.ask-about-selection]
+verify_jwt = true

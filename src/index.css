@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy-50: 251 249 252;
+    --navy-100: 243 240 246;
+    --navy-200: 230 225 236;
+    --navy-300: 201 194 209;
+    --navy-400: 152 143 162;
+    --navy-500: 116 106 127;
+    --navy-600: 88 80 99;
+    --navy-700: 74 67 84;
+    --navy-800: 64 58 73;
+    --navy-900: 57 51 66;
+    --navy-950: 38 34 46;
+
+    --cream-50: 255 253 249;
+    --cream-100: 255 249 240;
+    --cream-200: 246 238 224;
+
+    --sky-50: 247 244 250;
+    --sky-100: 240 234 245;
+    --sky-200: 224 213 236;
+    --sky-300: 176 152 200;
+    --sky-400: 150 124 186;
+    --sky-500: 128 100 158;
+    --sky-600: 112 85 143;
+    --sky-700: 96 72 126;
+    --sky-800: 82 60 110;
+    --sky-900: 66 47 90;
+
+    --lavender-50: 251 249 254;
+    --lavender-100: 245 241 252;
+    --lavender-200: 236 228 246;
+    --lavender-300: 220 207 238;
+    --lavender-400: 200 182 226;
+    --lavender-500: 178 156 212;
+    --lavender-600: 150 124 190;
+    --lavender-700: 122 96 162;
+    --lavender-800: 94 72 128;
+    --lavender-900: 68 50 96;
+
+    --blush-50: 254 250 252;
+    --blush-100: 252 243 247;
+    --blush-200: 245 221 229;
+    --blush-300: 238 204 216;
+    --blush-400: 230 184 200;
+    --blush-600: 176 110 132;
+    --blush-800: 128 62 88;
+    --blush-900: 96 44 66;
+
+    --sage-50: 248 251 246;
+    --sage-100: 241 246 238;
+    --sage-200: 220 232 213;
+    --sage-300: 200 220 190;
+    --sage-400: 176 202 164;
+    --sage-600: 92 126 80;
+    --sage-800: 56 84 46;
+    --sage-900: 38 60 32;
+  }
+
+  .dark {
+    --navy-50: 31 27 40;
+    --navy-100: 40 35 52;
+    --navy-200: 54 48 68;
+    --navy-300: 74 67 88;
+    --navy-400: 110 101 124;
+    --navy-500: 150 141 162;
+    --navy-600: 190 182 200;
+    --navy-700: 214 208 222;
+    --navy-800: 232 227 238;
+    --navy-900: 242 238 246;
+    --navy-950: 255 255 255;
+
+    --cream-50: 48 42 60;
+    --cream-100: 31 27 40;
+    --cream-200: 40 35 52;
+
+    --sky-50: 46 38 62;
+    --sky-100: 60 50 80;
+    --sky-200: 78 65 102;
+    --sky-300: 100 80 130;
+    --sky-400: 130 106 170;
+    --sky-500: 170 144 210;
+    --sky-600: 124 98 164;
+    --sky-700: 200 178 228;
+    --sky-800: 220 206 240;
+    --sky-900: 236 228 248;
+
+    --lavender-50: 40 34 56;
+    --lavender-100: 52 45 72;
+    --lavender-200: 66 57 90;
+    --lavender-300: 90 78 120;
+    --lavender-400: 120 104 150;
+    --lavender-500: 160 142 196;
+    --lavender-600: 200 182 226;
+    --lavender-700: 214 200 236;
+    --lavender-800: 230 220 244;
+    --lavender-900: 244 238 250;
+
+    --blush-50: 56 40 50;
+    --blush-100: 70 50 62;
+    --blush-200: 96 66 80;
+    --blush-300: 130 88 106;
+    --blush-400: 170 120 138;
+    --blush-600: 240 200 214;
+    --blush-800: 250 224 232;
+    --blush-900: 254 240 245;
+
+    --sage-50: 36 46 36;
+    --sage-100: 48 60 46;
+    --sage-200: 66 82 62;
+    --sage-300: 90 110 84;
+    --sage-400: 120 146 110;
+    --sage-600: 180 212 166;
+    --sage-800: 214 236 204;
+    --sage-900: 232 246 226;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply font-sans text-navy-900 antialiased;
+    line-height: 1.5;
+    background-color: rgb(var(--cream-100));
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    line-height: 1.2;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-sky-500 ring-offset-2 ring-offset-cream-100;
+  }
+}
+
+/* DM Serif Display ships one weight; forcing 400 avoids a synthetic bold on headings that use font-semibold. */
+h1,
+h2,
+h3 {
+  font-weight: 400 !important;
+}
+
+.dark .bg-white {
+  background-color: rgb(var(--cream-50));
+}
+
+.dark .text-sky-600 {
+  color: #c8b2ec;
+}
+
+.dark .bg-white\/60,
+.dark .bg-white\/80 {
+  background-color: rgb(var(--cream-50) / 0.8);
+}
+
+.dark .bg-emerald-50 { background-color: rgb(16 185 129 / 0.14); }
+.dark .bg-emerald-100 { background-color: rgb(16 185 129 / 0.26); }
+.dark .border-emerald-200 { border-color: rgb(16 185 129 / 0.45); }
+.dark .text-emerald-600,
+.dark .text-emerald-700,
+.dark .text-emerald-800,
+.dark .text-emerald-900 { color: #6ee7b7; }
+
+.dark .bg-amber-50 { background-color: rgb(245 158 11 / 0.14); }
+.dark .bg-amber-100 { background-color: rgb(245 158 11 / 0.26); }
+.dark .border-amber-200 { border-color: rgb(245 158 11 / 0.45); }
+.dark .text-amber-700,
+.dark .text-amber-800,
+.dark .text-amber-900 { color: #fcd34d; }
+
+.dark .bg-rose-50 { background-color: rgb(244 63 94 / 0.14); }
+.dark .bg-rose-100 { background-color: rgb(244 63 94 / 0.26); }
+.dark .border-rose-200 { border-color: rgb(244 63 94 / 0.45); }
+.dark .text-rose-700,
+.dark .text-rose-800,
+.dark .text-rose-900 { color: #fda4af; }
+
+.dark .bg-teal-50 { background-color: rgb(20 184 166 / 0.14); }
+.dark .bg-teal-100 { background-color: rgb(20 184 166 / 0.26); }
+.dark .border-teal-200 { border-color: rgb(20 184 166 / 0.45); }
+.dark .text-teal-700,
+.dark .text-teal-800,
+.dark .text-teal-900 { color: #5eead4; }
+
+.dark .bg-orange-50 { background-color: rgb(249 115 22 / 0.14); }
+.dark .bg-orange-100 { background-color: rgb(249 115 22 / 0.26); }
+.dark .border-orange-200 { border-color: rgb(249 115 22 / 0.45); }
+.dark .text-orange-700,
+.dark .text-orange-800,
+.dark .text-orange-900 { color: #fdba74; }
+
+.dark .bg-red-50 { background-color: rgb(239 68 68 / 0.14); }
+.dark .border-red-200 { border-color: rgb(239 68 68 / 0.45); }
+.dark .text-red-600,
+.dark .text-red-700,
+.dark .text-red-900 { color: #fca5a5; }

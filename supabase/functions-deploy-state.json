@@ -1,0 +1,21 @@
+{
+  "projectId": "72551210",
+  "functions": {
+    "generate-diagram": {
+      "hasChanged": false,
+      "hash": "5b46ea9cbcdc034e67b29a0fc4642e0cba5c8d0ef7ca1a9b36856e846528f5d9"
+    },
+    "generate-notes": {
+      "hasChanged": false,
+      "hash": "3cc983ce6021d5fc8b712d21195c87fab51194894c74126489633adc614a3f3c"
+    },
+    "generate-practice-test": {
+      "hasChanged": false,
+      "hash": "2b9e5da09dad610c04678081bb6a6a12eadab9ffb32cd76ce3280a779c6a6512"
+    },
+    "ask-about-selection": {
+      "hasChanged": false,
+      "hash": "5b282cf5b877ccf65253ebfed0b789f20e14d71019341ec23c90dc8c6b1abaa2"
+    }
+  }
+}
